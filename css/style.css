@@ -1,8 +1,11 @@
-#heading {
-		padding-right: 20px;
-		padding-top: 20px;
-		padding-left: 350px;
-		border-left-width: 10px;
-		border-right-width: 100px;
-		border-bottom-color: black;
+body {
+	margin;0;
+	padding:o;
+}
+
+#map{
+	position:absolute;
+	top:0;
+	bottom: 0;
+	width:100%;
 }

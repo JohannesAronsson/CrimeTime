@@ -1,0 +1,44 @@
+[
+  {
+    "Namn":"Police",
+    "Adress":"Torkel Knutssonsg. 20, 106 75 STOCKHOLM",
+    "Latitude":"59.317,",
+    "Longitude":"18.05756, "
+  },
+  {
+    "Namn":"Police",
+    "Adress":"Rosenlundsg. 9, 106 75 STOCKHOLM",
+    "Latitude":"59.31656,",
+    "Longitude":"18.05622,"
+  },
+  {
+    "Namn":"Police",
+    "Adress":"Söderhallarna 3, 118 72 STOCKHOLM",
+    "Latitude":"59.315,",
+    "Longitude":"18.07133,"
+  },
+  {
+    "Namn":"Police ",
+    "Adress":"Rosenlundsg. 13, 118 53 STOCKHOLM",
+    "Latitude":"59.31633,",
+    "Longitude":"18.05622,"
+  },
+  {
+    "Namn":"Södersjukhuset",
+    "Adress":"Sjukhusbacken 10\n118 61 STOCKHOLM",
+    "Latitude":"59.30989,",
+    "Longitude":"18.05578,"
+  },
+  {
+    "Namn":"Hospital",
+    "Adress":"Fjällg. 44, 116 28 STOCKHOLM",
+    "Latitude":"59.317,",
+    "Longitude":"18.08911,"
+  },
+  {
+    "Namn":"Capio Maria ",
+    "Adress":"Wollmar Yxkullsg. 25\n118 50 STOCKHOLM",
+    "Latitude":"59.31611,",
+    "Longitude":"18.058,"
+  }
+]

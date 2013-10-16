@@ -1,54 +1,26 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>CrimeTime</title>
-
+  
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <script src="js/map.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+
+  <!--[if lte IE 8]>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' >
+  <![endif]-->
 
 
-    
-       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-      <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="js-master/heatmap.js-master"></script>
-      <script type="text/javascript" src="js/main.js"></script>
-
-    
- 
+  </head>
 
 
-</head>
-<body>
-  <div id="heading">
-  <h1><img src="watch.img">FOR CRIME? </h1>
-</div>
-
-<h2>Our Golden Spots!</h2>
-
-<iframe width="1500" height="500" scrolling="yes" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col8+from+1sRvyibZU6Nx5FuEroYgEUciCJgZue80scKKJge4&amp;viz=MAP&amp;h=false&amp;lat=59.31901162516391&amp;lng=18.045731294999996&amp;t=1&amp;z=12&amp;l=col8&amp;y=3&amp;tmplt=3&amp;hml=TWO_COL_LAT_LNG"></iframe>
-
-	<h2>Add your Golden Spots!</h2>
-
-
-
-<h2>
-	<a href="http://www.webbkameror.se/webbkameror/stockholm/index.php">Want to see your victims live? Click here!</a> 
-</h2>
-
-
-<div id="heatmap">
-	<a href= "https://github.com/pa7/heatmap.js.git"></a>
-<a href:"https://www.google.com/fusiontables/DataSource?snapid=S1130004ujvL"></a>
-</div>
-
-
-
-
-
-
-
-
+  <body>
+    <div id="map"></div>
 
 
 
