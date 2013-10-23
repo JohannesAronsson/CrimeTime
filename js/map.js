@@ -34,7 +34,8 @@ $(document).ready(function(){
     			    // one can customize markers by adding simplestyle properties
     			    // http://mapbox.com/developers/simplestyle/
     			    'marker-size': 'small',
-    			    'marker-color': '#f0a'
+    			    'marker-color': '#000',
+    			    'marker-symbol': 'baseball'
     			}
 			});
 		}
