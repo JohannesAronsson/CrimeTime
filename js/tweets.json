@@ -1,0 +1,64 @@
+function fusionTables(id, callback) {
+    function response(x) {
+        var features = [];
+        if (!x || !x.rows) return features;
+        for (var i = 0; i < x.rows.length; i++) {
+            var entry = x.rows[i];
+            //
+            // modify the index values below based on the columns of your table
+            //
+            var feature = {
+                geometry: {
+                    type: 'Point',
+                    coordinates: [parseFloat(entry[2]), parseFloat(entry[5])]
+                },
+                properties: {
+                    "marker-color": "green",
+                    "marker-size": "small",
+                    "marker-symbol": "star",
+                    "title": entry[0],
+                    "description": "<p>Number of Deaths:" + entry[8] + "</p>"
+                }
+            };
+            features.push(feature);
+        }
+
+        return callback(features);
+    }
+    // enter  enter your google fusion tables api key below
+    var key = "AIzaSyAT6M-Bd5NWcryY6LvMDiAU_Flexol2Hdw";
+    var url = 'https://www.googleapis.com/fusiontables/v1/query?sql=SELECT%20*%20FROM%20' + id + '&key=' + key + '&typed=false&callback=jsonp';
+    $.ajax({
+        url: url,
+        dataType: 'jsonp',
+        jsonpCallback: 'jsonp',
+        success: response,
+        error: response
+    });
+}
+
+// enter the id of the fusion table you want to show on the map
+
+fusionTables('1sRvyibZU6Nx5FuEroYgEUciCJgZue80scKKJge4', function(features) {
+    features = _.map(features, function(f) {
+        f.properties.title = f.properties.title;
+        f.properties.description = f.properties.description;
+        return f;
+    });
+    var map = mapbox.map('map');
+
+    // enter the MapBox map id you want to display on the page
+
+    mapbox.load('lisenm.map-0r6yxgzt', function(o) {
+        map.addLayer(o.layer);
+        map.setZoomRange(6, 12);
+        map.ui.hash.add();
+        map.zoom(8).center({
+            lat: 60.595,
+            lon: 15.652
+        });
+        var markerLayer = mapbox.markers.layer().features(features);
+        map.addLayer(markerLayer);
+        mapbox.markers.interaction(markerLayer).add();
+    });
+});
