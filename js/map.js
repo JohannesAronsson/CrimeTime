@@ -1,5 +1,5 @@
 $(document).ready(function(){
-		var map = L.mapbox.map('map', 'lisenm.map-0r6yxgzt');
+		map = L.mapbox.map('map', 'lisenm.map-0r6yxgzt');
 		 brottsLayer = L.mapbox.markerLayer()
 	var data;	
 
@@ -56,9 +56,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
 });
+
 
