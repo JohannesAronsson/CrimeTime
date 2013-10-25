@@ -1,7 +1,7 @@
 $(document).ready(function(){
    map.setView([59.314838, 18.069763], 10);
 
-    var userLocation = L.divIcon({html: "<img src='https://dl.dropboxusercontent.com/u/4077265/star-stroked-24.svg'>"});
+    var userLocation = L.divIcon({html: "<img src='https://dl.dropboxusercontent.com/u/4077265/CRIME/img/marker.png'>"});
     var user = L.marker([0, 0], {icon: userLocation}).addTo(map);
     L.mapbox.tileLayer('http://a.tiles.mapbox.com/v3/lisenm.map-0r6yxgzt.json', {
         maxZoom: 18

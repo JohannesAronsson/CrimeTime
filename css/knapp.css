@@ -1,0 +1,33 @@
+.knapp {
+	position: fixed;
+	z-index: 99;
+	width: 156px;
+	margin: 20px;
+	bottom: 140px !important;
+	right: -5px !important;
+}
+
+.knapp2 {
+	position: fixed;
+	z-index: 99;
+	width: 156px;
+	margin: 20px;
+	bottom: 180px !important;
+	right: -5px !important;
+}
+
+.knapp3 {
+	position: fixed;
+	z-index: 99;
+	width: 156px;
+	margin: 20px;
+	bottom: 220px !important;
+	right: -5px !important;
+}
+
+#map {
+z-index: 1;
+}
+.map {
+z-index: 1;
+}
