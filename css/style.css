@@ -1,0 +1,5 @@
+.leaflet-marker-icon, .leaflet-div-icon, .leaflet-zoom-animated, .leaflet-clickable {
+	width: 0px !important;
+	height: 0px !important;
+
+}
