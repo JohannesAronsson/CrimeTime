@@ -13,9 +13,10 @@ $(document).ready(function(){
         var lng = data['coords']['longitude'];
         var newLatLng = new L.LatLng(lat, lng);
 
-        map.setView(new L.LatLng(lat, lng), 14);
-        
         user.setLatLng(newLatLng);
+        // map.setView(new L.LatLng(lat, lng), 10);
+        
+        
 
     
     }, function(e){console.log(e)});
