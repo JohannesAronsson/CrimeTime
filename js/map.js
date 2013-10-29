@@ -9,7 +9,7 @@ $(document).ready(function(){
 	//     dataType: "json",
  //    	success: getbrottsData
  //    });	
-	var url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Fwww.brottsplatskartan.se%2Fapi.php%3Faction%3DgetEvents%26period%3D10080'&format=json&diagnostics=true&callback="
+	var url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'http%3A%2F%2Fwww.brottsplatskartan.se%2Fapi.php%3Faction%3DgetEvents%26period%3D30240%26area%3Dstockholms%2520l%25C3%25A4n'&format=json&diagnostics=true&callback="
 	$.getJSON(url, getbrottsData);
 
 	function getbrottsData (data) {
