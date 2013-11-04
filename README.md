@@ -2,6 +2,10 @@
 
 A simple sliding menu used on the main [We Make Awesome Sh site](http://wemakeawesomesh.it). It uses webkit filters to blur out the content under the menu when active
 
+## Screendump: 
+
+https://github.com/JohannesAronsson/CrimeTime/blob/master/screendump.jpg
+
 ## Installation instructions
 
 ### Include the css &amp; js files
